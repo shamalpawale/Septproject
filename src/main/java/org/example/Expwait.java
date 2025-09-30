@@ -16,7 +16,6 @@ import java.time.Duration;
             driver.get("https://demo.automationtesting.in/Alerts.html");
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
             driver.manage().window().maximize();
-            //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
             WebElement clickbutton =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"OKTab\"]/button")));
             clickbutton.click();
